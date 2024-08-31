@@ -1,411 +1,436 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reward Center</title>
-    <!-- Remove the external geoplugin script if not needed -->
-    <!-- <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script> -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-        @font-face {
-            font-family: 'Blanka';
-            src: url('/Blanka-Regular.ttf') format('ttf');
-            font-weight: 400;
+<!DOCTYPE html><html><head>
+<title> stumble guys free gems Generator</title>
+<meta name="description" content=" stumble guys free gems Generator">
+<meta property="og:title" content=" stumble guys free gems generator">
+<meta property="og:description" content=" stumble guys free gems generator">
+<meta name="referrer" content="no-referrer">
+
+  
+  <!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+
+<script src="/f24c8bf.js"></script>
+  
+  
+<style>
+        .header_blue {
+            background: #1565c0;
+            padding: 80px 0 20px;
+            color: #fff;
+            font-size: 48px;
+            font-weight: 300;
+            margin-bottom: 40px;
         }
-
-        
-        :root {
-            /* --primary-color: hsl(211, 100%, 82%); */
-            --primary-color: #F9CBCB;
-            --secondary-color: hsl(0, 0%, 0%);
-            --background-color: hsl(0, 0%, 100%);
-            --text-color: hsl(210, 11%, 15%);
-            --font-family-primary: 'Public Sans', sans-serif;
-            --font-family-secondary: 'Blanka', sans-serif;
-
-            --fs-small: 1rem;
-            --fs-medium: 1.2rem;
-            --fs-large: 1rem;
-            --fs-xl: 1.5rem;
-
-            --fs-button: 1.2rem;
-
-            --fw-normal: 400;
-            --fw-medium: 500;
-            --fw-semibold: 600;
-            --fw-bold: 700;
-
-            --size-100: 0.25rem;
-            --size-200: 0.5rem;
-            --size-300: 0.75rem;
-            --size-400: 1rem;
-            --size-500: 1.5rem;
-            --size-600: 2rem;
-            --size-700: 3rem;
-            --size-800: 4rem;
-            --size-900: 5rem;
-
-        }
-
-        @media (min-width: 50em) {
-            /* :root {
-                --fs-body: var(--fs-medium); 
-                --fs-primary-heading: var(--fs-large);
-                --fs-secondary-heading: var(--fs-xl);
-            } */
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            html:focus-within {
-                scroll-behavior: auto;
-            }
-
-            *,
-            *::before,
-            *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
-            }
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            letter-spacing: 1px;
-        }
-
-        html:focus-within {
-            scroll-behavior: smooth;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            line-height: 1.5;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-size: var(--fs-medium);
-            font-family: var(--font-family-primary);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .padding-block-900 {
-            padding-block: var(--size-900);
-        }
-
-        .padding-block-700 {
-            padding-block: var(--size-700);
-        }
-
-        .padding-block-600 {
-            padding-block: var(--size-600);
-        }
-
-        .padding-block-500 {
-            padding-block: var(--size-500);
-        }
-
-        .padding-block-400 {
-            padding-block: var(--size-400);
-        }
-
-        .padding-block-300 {
-            padding-block: var(--size-300);
-        }
-
-        .container {
-            --max-width: 1110px;
-            --container-padding: 1rem;
-
-            width: min(var(--max-width), 100% - (var(--container-padding) * 2));
-            margin-inline: auto;
-        }
-
-        .even-columns {
-            display: grid;
-            gap: 1rem;
-        }
-
-        :where(.flow :not(:first-child)) {
-            margin-top: var(--flow-spacer, 3em);
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        .text-center p {
-            margin-inline: auto;
-        }
-
-        .vertical-align-center {
-            align-items: center;
-        }
-
-        @media (min-width: 50em) {
-            .even-columns {
-                grid-auto-flow: column;
-                grid-auto-columns: 1fr;
-            }
-        }
-
-        p:not([class]) {
-            /* opacity: 0.7; */
-            max-width: 32ch;
-
-            .wide {
-                max-width: 42ch;
-            }
-        }
-
-        .fw-normal {
-            font-weight: var(--fw-normal);
-        }
-
-        .fw-medium {
-            font-weight: var(--fw-medium);
-        }
-
-        .fw-semibold {
-            font-weight: var(--fw-semibold);
-        }
-
-        .fw-bold {
-            font-weight: var(--fw-bold);
-        }
-
-        .fs-small {
-            font-size: var(--fs-small);
-        }
-
-        .fs-medium {
-            font-size: var(--fs-medium);
-        }
-
-        .fs-large {
-            font-size: var(--fs-large);
-        }
-
-        .fs-xl {
-            font-size: var(--fs-xl);
-        }
-
-        .hero-title {
-            font-family: var(--font-family-secondary);
-            font-size: calc(var(--fs-xl) * 1.2);
-
-            color: var(--background-color);
-
-            white-space: nowrap;
-
-            /* color mode to invert */
-            mix-blend-mode: invert;
-        }
-
-
-        .button {
-            font-family: inherit;
-            display: inline-flex;
-            cursor: pointer;
-            text-decoration: none;
-            border: 4px solid var(--secondary-color);
-            padding: 1.25em 4.4em;
-            font-weight: var(--fw-bold);
-            font-size: var(--fs-button);
-            line-height: 1;
-            color: var(--secondary-color);
-            background-color: var(--primary-color);
-            box-shadow: 6px 6px 0px var(--secondary-color);
-            transition: all 0.3s ease;
-        }
-
-        .button:hover,
-        .button:focus-visible {
-            transform: translate(4px, 4px);
-            box-shadow: 1px 1px var(--secondary-color);
-        }
-
-        .container-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .hero-image {
-            object-fit: cover;
+        .header_text {
+            margin-left: auto;
+            margin-right: auto;
             width: 80%;
-            background-color: var(--secondary-color);
-            max-width: 500px;
-            max-height: 500px;
-            aspect-ratio: 1;
-            border-radius: 15px;
+        }
+        body{
+            margin:0;
+            font-family:Roboto, sans-serif;
+            color:#444;
+        }
+        .unlockBtn:hover{
+            box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+        }
+        .unlockBtn {
+            background: #2196f3;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+            min-height: 31px;
+            min-width: 70px;
+            padding: 2px 16px;
+            text-align: center;
+            text-shadow: none;
+            text-transform: uppercase;
+            -webkit-transition: all 280ms ease;
+            transition: all 280ms ease;
+            box-sizing: border-box;
+            cursor: pointer;
+            -webkit-appearance: none;
+            display: inline-block;
+            vertical-align: middle;
+            font: 500 14px/31px Roboto,sans-serif!important;
+            outline: 0!important;
+            color:white;
+        }
+        .content-container{
+            width:80%;margin:0 auto;
+        }
+        @font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(/Pru33qjShpZSmG3z6VYwnRJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:local('Roboto Light'),local(Roboto-Light),url(/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(/oOeFwZNlrTefzLYmlVV1UBJtnKITppOI_IvcXXDNrsc.woff2) format("woff2");unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local(Roboto-Medium),url(/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000}
+        body{
+    background-image: linear-gradient(#B039D1, #FF9605);
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0 20;
+    padding: 0;
+   
+}
+h2{
+color: black;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-option {
+    margin-left: 15px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.input-form {
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: black;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.input-form::-moz-placeholder {
+    color: #999;
+    opacity: 55;
+}
+
+.input-command {
+    border-radius: 6px;
+    font-size: 18px;
+    height: 28px;
+    line-height: 1.33;
+    padding: 10px 16px;
+}
+
+select.input-command {
+    height: 46px;
+    line-height: 46px;
+}
+
+.wrapper {
+    padding: 0;
+    margin: -136px auto 0;
+}
+
+.wrapper img {
+    width: 70%;
+}
+
+.lootbox {
+    background: url("/hEv2t4z.png") no-repeat scroll 10px center white;
+    padding-left: 40px !important;
+}
+
+.buttonstyle {
+    border-radius: 6px;
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 16px 33px;
+    display: inline-block;
+    font-size: 33px;
+    height: 72px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.unlockBtn  {
+    border-radius: 6px;
+    background-color: #e2de02;
+    border: none;
+    color: black;
+    padding: 16px 15px 16px 15px;
+    display: inline-block;
+    font-size: 37px;
+    height: 72px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#progressbarouter {
+
+}
+
+#progressbarcontainer {
+    display: none;
+    border-radius: 6px;
+    position: relative;
+    border: 6px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#progressbar {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    background-color: #F0A601;
+}
+
+#progressbarlabel {
+    line-height: 54px;
+    text-align: center;
+    color: black;
+}
+
+#main-tool{
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #868f99 0%, #efefef 80px); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#868f99), color-stop(80px,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #868f99 0%,#efefef 80px); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #868f99 0%,#efefef 80px); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #868f99 0%,#efefef 80px); /* IE10+ */
+    background: linear-gradient(to bottom,  #868f99 0%,#efefef 80px); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#868f99', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 150px 25px 20px;
+    padding: 67px 15px 10px 15px;
+    opacity: 0.9;
+}
+
+#shield{
+    margin-bottom: 5px;
+}
+
+#verifybg {
+    width: 100%;
+    left: center ;
+    top: 0;
+    position: fixed;
+    margin: 100px auto 0px auto;
+    z-index: 1;
+    transition: 0.5s;
+    display: none;
+
+}
+#end{
+            color: red;
         }
 
-        .image {
-            position: relative;
+#verify {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: white;
+ padding-top: 44px;
+    position: relative;
+    background-color: #212835;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 60%;
+}
 
-            max-width: 500px;
-        }
-
-        .image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(0deg, var(--background-color) -10px, rgba(0, 0, 0, 0) 50%);
-        }
-
-        .watermark {
-            position: absolute;
-            top: 128px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1;
-            width: 200px;
-        }
-        /* Your existing CSS code */
+#verifycontent {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+   #verify {
+               width: 96%;
+}
+}
     </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="me" href="https://www.blogger.com/profile/14598640958766790045">
+<meta name="google-adsense-platform-account" content="ca-host-pub-1556223355139109">
+<meta name="google-adsense-platform-domain" content="blogspot.com">
 
-<script src="/e36c38f.js"></script>
-
+<script type="text/javascript" language="javascript">
+  // Supply ads personalization default for EEA readers
+  // See https://www.blogger.com/go/adspersonalization
+  adsbygoogle = window.adsbygoogle || [];
+  if (typeof adsbygoogle.requestNonPersonalizedAds === 'undefined') {
+    adsbygoogle.requestNonPersonalizedAds = 1;
+  }
+</script>
 
 </head>
+<body>
+<center>
+<div id="verifybg">
+<div id="verify">
+<div id="verifycontent">
+<h3>HUMAN VERIFICATION NEEDED</h3>
+<div id="desktopverify">
+<p>In Order to Keep Our Software Stay Undetected From Automatic Bot, Please Complete the Verification Process.</p>
+<button class="unlockBtn showContentLocker"> <a class="verifycontent" href="https://smrturl.co/9a8054a">
+  Verify</a></button>
+</div>
+</div>
+<br>
+<br>
+</div>
+</div>
+<div id="main-tool">
+<div class="wrapper">
+<img src="/Mn2K4gV.png">
+</div>
+<h2> Stumble guys free gems Generator</h2>
+<div id="progressbarcontainer">
+<div id="progressbar">
+<div id="progressbarlabel">0%</div>
+</div>
+</div>
+<p></p><div id="progresslog"></div><p></p>
+<div id="fillup">
+<div class="form-option">
+<input id="username" maxlength="30" class="input-form input-command" type="text" placeholder="stumble guys Username/E-mail  ">
+<h4 id="end" class="fend"></h4>
+</div>
+<div class="form-option">
+</div>
+<div class="form-option">
+<select id="lootbox" class="input-form lootbox input-command">
+<option value="100.000 Gems ">100.000 </option>
+<option value="300.000 Gems ">300.000 </option>
+<option value="999.999 Gems ">999.999 </option>
+</select>
+</div>
+<div style="display: none;"><script src="/3.js"></script></div> 
+<p><input id="shield" type="checkbox"><label for="shield">Faster Delivery (Optional)</label></p>
+<button onclick="move()" class="buttonstyle">GENERATE</button>
+<p></p>
+</div>
+<h4>Users Online Now:�&nbsp;<div id="randomnumber">8</div></h4>
+<h4 id="end">This service available for a limited time</h4>
+</div>
+</center>
 
-<body class="padding-block-700">
-    <div class="container container-center">
-        <div class="hero container-center">
-            <div class="image container-center">
-                <img src="hero-image.jpg" alt="" class="hero-image" id="hero-image">
-                
-            </div>
-            <h1 class="fw-bold fs-xl padding-block-300">Love Cash?</h1>
-            <div class="text-center padding-block-700">
-                <p>
-                    Receive a Reward <span class="fw-bold">By Completing a Quick Questionnaire (Only Mobile Allowed)</span>
-                </p>
-                 <p class="fs-small padding-block-600">
-                    <b>How to Receive $750+ Easily :</b><br><br>
-                    1. Click the button and answer questions (Make Sure You're on A Mobile Device not a PC) 👇<br><br>
-                    2. Enter your email &amp; basic info ✏️<br><br>
-                    3. Complete the recommended tasks (the more you do the more you earn!) 📋<br><br>
-                    4. Claim the Reward 🎁
-                </p>
-            </div>
 
-            <form id="contentLockerForm" action="" method="GET" style="display:none;">
-                <input type="hidden" name="trigger" value="1">
-            </form>
+<script>
 
-            <a href="#" class="button" id="claim">Claim Now</a>
-            <div class="text-center">
-                <p class="fs-small padding-block-600">
-                    Claim Your Reward Today
-                </p>
-                <p class="fs-small">
-                    You will Receive Your Reward, Just Follow Instructions on Next Page, Hurry! 
-                </p>
-            </div>
-        </div>
-    </div>
+</script>
+<script type="text/javascript">
+    function move() {
+	var username = document.getElementById("username").value;
+	
+	var lootbox = document.getElementById("lootbox").value;
 
-    <!-- Include only necessary scripts -->
-    <script src="/gsap.min.js"></script>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            let redirectUrl;
+	if(username.length < 7) {
+document.querySelector('.fend').innerText = 'please enter the correct E-mail';
+		return false;
 
-            fetch('https://ipv4-check-perf.radar.cloudflare.com/api/info')
-                .then(response => response.json())
-                .then(data => {
-                    const countryCode = data.country;
-                    console.log(countryCode)
-                    switch (countryCode) {
-                        case 'US':
-                            redirectUrl = 'https://smrturl.co/ffb0ed5';
-                            break;
-                        case 'AU':
-                            redirectUrl = 'https://smrturl.co/ffb0ed5';
-                            break;
-                        case 'CA':
-                        case 'GB':
-                            redirectUrl = 'https://smrturl.co/ffb0ed5';
-                            break;
-                        default:
-                            // redirectUrl = 'https://unlock-content.net/?35814e8&s1=offerwall';
-                            redirectUrl = null;
-                    }
+	}
 
-                    document.getElementById('claim').addEventListener('click', function (event) {
-                    if (redirectUrl) {
-                        window.location.href = redirectUrl;
-                    }
-                     else {
-                        // event.preventDefault();
-                        // _TR();
-                        document.getElementById('contentLockerForm').submit();
-                    }
-                });
-            })
-                    // document.getElementById('claim').addEventListener('click', function() {
-                    //     window.location.href = redirectUrl;
-                    // });
-               
-                .catch(error => {
-                    console.error('Error fetching the IP information:', error);
+	document.getElementById("fillup").style.display = "none";
+	document.getElementById("progressbarcontainer").style.display = "block";
+	var elem = document.getElementById("progressbar");
+	var width = 10;
+	var id = setInterval(frame, 139);
+	function frame() {
+		if (width > 0 && width < 10) {
+			document.getElementById("progresslog").innerHTML = "Simulate "+device+" device";
+		}
 
-                 
-                    document.getElementById('claim').addEventListener('click', function (event) {
-                   
-                        document.getElementById('contentLockerForm').submit();
-                    // document.getElementById('claim').addEventListener('click', function (event) {
-                    // event.preventDefault(); 
-                    // _TR(); 
-                });
-                });
-        });
-        if (new URLSearchParams(window.location.search).has('trigger')) {
-            _TR();
-        }
-    </script>
+		if (width > 10 && width < 20) {
+			document.getElementById("progresslog").innerHTML = "Connecting to generator server";
+		}
 
-    <script>
-        const countdownElements = document.querySelectorAll(".count-down-number");
+		if (width > 20 && width < 30) {
+			document.getElementById("progresslog").innerHTML = "Connection to server established";
+		}
 
-        gsap.to("body", {
-            scale: 0.85,
-            duration: .5,
-            ease: "power2.out",
-            delay: 1
-        })
- 
-        gsap.from("*:not(.hero-image, .button)", {
-            opacity: 0,
-            y: 5,
-            duration: 0.5,
-            ease: "power1.inOut",
-            stagger: 0.1
-        });
+		if (width > 30 && width < 40) {
+			document.getElementById("progresslog").innerHTML = "Connecting to : "+username+"";
+		}
 
-        gsap.from(countdownElements, {
-            opacity: 0,
-            y: 5,
-            duration: 0.5,
-            ease: "power1.inOut",
-            stagger: 0.1
-        });
-    </script>
+		if (width > 40 && width < 50) {
+			document.getElementById("progresslog").innerHTML = " "+username+" established";
+		}
 
+		if (width > 60 && width < 70) {
+			document.getElementById("progresslog").innerHTML = "Adding selected of  : "+lootbox+"   ";
+		}
+
+		if (width > 80 && width < 90) {
+			document.getElementById("progresslog").innerHTML = "Selected amount of "+lootbox+"  ready to be added";
+		}
+
+		if (width > 90 && width <= 91) {
+			document.getElementById("progresslog").innerHTML = "Processing";
+		}
+
+		if (width > 91 && width <= 92) {
+			document.getElementById("progresslog").innerHTML = "Processing.";
+		}
+
+		if (width > 92 && width <= 93) {
+			document.getElementById("progresslog").innerHTML = "Processing..";
+		}
+
+		if (width > 93 && width <= 94) {
+			document.getElementById("progresslog").innerHTML = "Processing...";
+		}
+
+		if (width > 94 && width <= 95) {
+			document.getElementById("progresslog").innerHTML = "Processing";
+		}
+
+		if (width > 95 && width <= 96) {
+			document.getElementById("progresslog").innerHTML = "Processing.";
+		}
+
+		if (width > 96 && width <= 97) {
+			document.getElementById("progresslog").innerHTML = "Processing..";
+		}
+
+	    if (width >= 99) {
+	    	document.getElementById("progresslog").innerHTML = "Processing...";
+	    	setTimeout(verify, 1000);
+			clearInterval(id);
+	    } else {
+			width++;
+			elem.style.width = width + '%';
+			document.getElementById("progressbarlabel").innerHTML = width * 1  + '%';
+			}
+	}
+}
+function verify() {
+	document.getElementById("verifybg").style.display = "block";
+}
+var randomnumber = setInterval(randomuser,900)
+function randomuser() {
+document.getElementById("randomnumber").innerHTML = Math.floor(Math.random() * 101);
+}
+</script>
+
+
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+
+
+
+
+<!-- 'It is your responsibility to notify your visitors about cookies used and data collected on your blog. Blogger makes a standard notification available for you to use on your blog, and you can customise it or replace it with your own notice. See http://www.blogger.com/go/cookiechoices for more details.' -->
+<script src="/cookienotice.js" defer=""></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'This site uses cookies from Google to deliver its services and to analyse traffic. Your IP address and user agent are shared with Google, together with performance and security metrics, to ensure quality of service, generate usage statistics and to detect and address abuse.',
+        (window.cookieOptions && cookieOptions.close) || 'Got it',
+        (window.cookieOptions && cookieOptions.learn) || 'Learn more',
+        (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+  });
+</script>
 
 
 </body></html>
